@@ -9,21 +9,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/chase"
-        android:layout_width="160dip"
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bank_of_america"
-        android:layout_below="@+id/bank_of_america"
-        android:text="Chase" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="118dp"
+        android:text="Select your bank:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:src="@drawable/logo" />
 
     <Button
         android:id="@+id/bank_of_america"
         android:layout_width="160dip"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/citibank"
         android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
         android:text="Bank of America" />
+
+    <Button
+        android:id="@+id/chase"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bank_of_america"
+        android:layout_centerHorizontal="true"
+        android:text="Chase" />
 
     <Button
         android:id="@+id/citibank"
@@ -34,47 +54,35 @@
         android:text="Citibank" />
 
     <Button
-        android:id="@+id/suntrust"
-        android:layout_width="160dip"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/citibank"
-        android:layout_below="@+id/citibank"
-        android:text="Suntrust" />
-
-    <Button
         android:id="@+id/pnc"
         android:layout_width="160dip"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/suntrust"
-        android:layout_below="@+id/suntrust"
+        android:layout_below="@+id/citibank"
+        android:layout_centerHorizontal="true"
         android:text="PNC" />
+
+    <Button
+        android:id="@+id/suntrust"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pnc"
+        android:layout_centerHorizontal="true"
+        android:text="Suntrust" />
 
     <Button
         android:id="@+id/wells_fargo"
         android:layout_width="160dip"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/pnc"
-        android:layout_below="@+id/pnc"
-        android:text="Wells Fargo" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/suntrust"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="118dp"
-        android:text="Select your bank:"
-        android:layout_marginBottom="20dp"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:text="Wells Fargo" />
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:paddingLeft="20dp"
-        android:src="@drawable/logo" />
+        android:layout_alignBottom="@+id/wells_fargo"
+        android:layout_toRightOf="@+id/imageView_logo"
+        android:src="@drawable/info_icon" />
 
 </RelativeLayout>
