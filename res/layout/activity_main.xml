@@ -2,13 +2,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    
-    android:background="@drawable/background"
-    
     tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/chase"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bank_of_america"
+        android:layout_below="@+id/bank_of_america"
+        android:text="Chase" />
+
+    <Button
+        android:id="@+id/bank_of_america"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/citibank"
+        android:layout_below="@+id/textView1"
+        android:text="Bank of America" />
+
+    <Button
+        android:id="@+id/citibank"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chase"
+        android:layout_centerHorizontal="true"
+        android:text="Citibank" />
+
+    <Button
+        android:id="@+id/suntrust"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/citibank"
+        android:layout_below="@+id/citibank"
+        android:text="Suntrust" />
+
+    <Button
+        android:id="@+id/pnc"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/suntrust"
+        android:layout_below="@+id/suntrust"
+        android:text="PNC" />
+
+    <Button
+        android:id="@+id/wells_fargo"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pnc"
+        android:layout_below="@+id/pnc"
+        android:text="Wells Fargo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"
+        android:text="Select your bank:"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:src="@drawable/logo" />
 
 </RelativeLayout>
