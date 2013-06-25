@@ -81,8 +81,8 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/wells_fargo"
-        android:layout_toRightOf="@+id/imageView_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:src="@drawable/info_icon" />
 
 </RelativeLayout>
