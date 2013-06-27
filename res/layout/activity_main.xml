@@ -30,14 +30,6 @@
         android:src="@drawable/logo" />
 
     <Button
-        android:id="@+id/bank_of_america"
-        android:layout_width="160dip"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:text="Bank of America" />
-
-    <Button
         android:id="@+id/chase"
         android:layout_width="160dip"
         android:layout_height="wrap_content"
@@ -77,12 +69,20 @@
         android:layout_centerHorizontal="true"
         android:text="Wells Fargo" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/other_bank"
+        android:layout_width="160dip"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/info_icon" />
+        android:layout_below="@+id/wells_fargo"
+        android:layout_centerHorizontal="true"
+        android:text="Other bank" />
+
+    <Button
+        android:id="@+id/bank_of_america"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chase"
+        android:layout_below="@+id/textView1"
+        android:text="Bank of America" />
 
 </RelativeLayout>

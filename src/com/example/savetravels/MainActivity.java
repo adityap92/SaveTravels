@@ -72,6 +72,16 @@ public class MainActivity extends Activity {
             	startActivity(i);
             }
         });
+        
+        final Button button_other_bank = (Button) findViewById(R.id.other_bank);
+        button_other_bank.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+            	Intent i = new Intent(getApplicationContext(), BankInfoActivity.class);
+            	i.putExtra(EXTRA_MESSAGE, "Other Bank");
+            	startActivity(i);
+            }
+        });
 	}
 
 	@Override

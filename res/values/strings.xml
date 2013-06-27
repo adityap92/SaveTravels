@@ -9,5 +9,7 @@
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
     <string name="title_activity_bank_info">BankInfoActivity</string>
+    <string name="foreign_transaction_fee">Foreign Transaction Fee</string>
+    <string name="atm_fee">ATM Fee</string>
 
 </resources>
